@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Friendly Club</title>
+    <link rel="stylesheet" href="pet.css" />
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">🐾 Pet Friendly Club</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#volunteer">Volunteer</a></li>
+                <li><a href="#stories">Stories</a></li>
+                <li><a href="#adopt">Adopt</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>🐾 Make the World More Pet Friendly!</h1>
+        <p>Join hands to create safe, happy spaces for our furry companions.</p>
+        <div class="cta-buttons">
+            <a href="#volunteer" class="btn">Join the Movement</a>
+            <a href="#volunteer" class="btn">Volunteer Now</a>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+        <img class="hero-img" src="https://via.placeholder.com/800x400?text=Pet+Friendly+Visual" alt="Hero Visual" />
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We are a group of pet lovers committed to building a better world for our furry friends. Join us in events, adoption drives, and more!</p>
+    </section>
+
+    <!-- Volunteer Form -->
+    <section class="volunteer" id="volunteer">
+        <h2>Volunteer With Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="text" placeholder="City" required />
+            <select>
+        <option value="">Select a Role</option>
+        <option>Event Helper</option>
+        <option>Rescue Volunteer</option>
+        <option>Foster Parent</option>
+        <option>Social Media Support</option>
+      </select>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Impact Stories -->
+    <section class="stories" id="stories">
+        <h2>Impact Stories</h2>
+        <div class="story-cards">
+            <div class="card">
+                <h3>From Stray to Star 🐶</h3>
+                <p>Roxy was rescued from the streets and now helps children with therapy. Her journey inspires many.</p>
+            </div>
+            <div class="card">
+                <h3>Whiskers' New Home 🐱</h3>
+                <p>This shy kitten found her forever home thanks to one of our adoption drives.</p>
+            </div>
+            <div class="card">
+                <h3>Bruno the Brave 🐕</h3>
+                <p>Once abandoned, now a hero police dog! Volunteer efforts changed his life.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adoption Carousel Placeholder -->
+    <section class="adopt" id="adopt">
+        <h2>Meet Our Adoptables</h2>
+        <p>Suggested by our smart system 🧠</p>
+
+        <!-- Manual Carousel -->
+        <div class="carousel-container">
+            <button class="carousel-btn prev" onclick="slidePets(-1)">❮</button>
+            <div class="carousel-track" id="carousel-track">
+                <!-- Pet 1 -->
+                <div class="pet-card">
+                    <img src="C:\Users\HP\OneDrive\Desktop\vscode\gld.webp" alt="Golden Retriever" />
+                    <strong>Max</strong><br>Golden Retriever<br>2 yrs
+                </div>
+                <!-- Pet 2 -->
+                <div class="pet-card">
+                    <img src="C:\Users\HP\OneDrive\Desktop\vscode\sc.webp" alt="Siamese Cat" />
+                    <strong>Luna</strong><br>Siamese Cat<br>1 yr
+                </div>
+                <!-- Pet 3 -->
+                <div class="pet-card">
+                    <img src="C:\Users\HP\OneDrive\Desktop\vscode\bg.jpg" alt="Beagle" />
+                    <strong>Buddy</strong><br>Beagle<br>3 yrs
+                </div>
+                <!-- Pet 4 -->
+                <div class="pet-card">
+                    <img src="C:\Users\HP\OneDrive\Desktop\vscode\pc.webp" alt="Persian Cat" />
+                    <strong>Mochi</strong><br>Persian Cat<br>4 yrs
+                </div>
+            </div>
+            <button class="carousel-btn next" onclick="slidePets(1)">❯</button>
+        </div>
+
+        <!-- Auto Carousel -->
+        <div class="auto-carousel">
+            <h3>Auto-Sliding Pet Showcase</h3>
+            <div class="auto-track" id="auto-track">
+                <div class="pet-card">
+                    <img src="https://images.unsplash.com/photo-1574158592182-34e3f3c08b77" alt="Lab" /> Daisy
+                    <br>Lab
+                </div>
+                <div class="pet-card">
+                    <img src="https://images.unsplash.com/photo-1582483665039-79b36cc5e4ef" alt="Tabby Cat" /> Smokey
+                    <br>Tabby
+                </div>
+                <div class="pet-card">
+                    <img src="https://images.unsplash.com/photo-1591967662539-f99020c7b3f5" alt="Husky" /> Rocky
+                    <br>Husky
+                </div>
+                <div class="pet-card">
+                    <img src="https://images.unsplash.com/photo-1592926984312-798d40b4a45f" alt="Maine Coon Cat" /> Mimi
+                    <br>Maine Coon
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Grid Placeholder -->
+        <div class="ai-grid">
+            <h3>AI Suggested Matches</h3>
+            <div class="grid">
+                <div class="pet-card">
+                    <img src="https://images.unsplash.com/photo-1570324933464-7ba84ea7d8c2" alt="Dog" /> Bruno
+                    <br>Playful pup
+                </div>
+                <div class="pet-card">
+                    <img src="https://images.unsplash.com/photo-1562660989-2459c04b4745" alt="Cat" /> Nala
+                    <br>Quiet cuddler
+                </div>
+                <div class="pet-card">
+                    <img src="https://images.unsplash.com/photo-1572384470478-9d5b194ff3ac" alt="Dog" /> Charlie
+                    <br>Great with kids
+                </div>
+                <div class="pet-card">
+                    <img src="https://images.unsplash.com/photo-1555986528-6f99f2b8e6e9" alt="Cat" /> Willow
+                    <br>Loves windows
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Chatbot Placeholder -->
+    <section class="chatbot">
+        <h2>Talk to PawBuddy 🤖</h2>
+        <p><em>Coming Soon: An AI chatbot to help you learn more!</em></p>
+        <div class="chatbot-box">
+            <div class="chat-log" id="chat-log"></div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Ask PawBuddy anything..." />
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@petfriendlyclub.org</p>
+        <p>Instagram: @petfriendlyclub</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Pet Friendly Club | Made with ❤️</p>
+    </footer>
+    <script>
+        const log = document.getElementById("chat-log");
+
+        const fakeReplies = {
+            "hello": "Hi there! 🐶 I’m PawBuddy — your guide to all things pet-friendly!",
+            "how to volunteer": "Just fill out the form above under 'Join Us' and we’ll reach out!",
+            "adopt": "Adopting is amazing! 🐾 Check the adoption section to meet our pets!",
+            "bye": "Goodbye! Hope to see you soon, friend! 🐕",
+            "default": "I’m still learning tricks! Ask me about volunteering, adopting, or saying hi!"
+        };
+
+        function sendMessage() {
+            const input = document.getElementById("user-input");
+            const message = input.value.trim().toLowerCase();
+            if (!message) return;
+
+            log.innerHTML += `<div><strong>You:</strong> ${input.value}</div>`;
+            input.value = "";
+
+            let reply = fakeReplies["default"];
+            for (const key in fakeReplies) {
+                if (message.includes(key)) {
+                    reply = fakeReplies[key];
+                    break;
+                }
+            }
+
+            setTimeout(() => {
+                log.innerHTML += `<div><strong>PawBuddy:</strong> ${reply}</div>`;
+                log.scrollTop = log.scrollHeight;
+            }, 600); // mimic delay
+        }
+    </script>
+
+    <script>
+        let carouselIndex = 0;
+
+        function slidePets(direction) {
+            const track = document.getElementById("carousel-track");
+            const cardWidth = track.children[0].offsetWidth + 16; // Card + gap
+            carouselIndex += direction;
+            if (carouselIndex < 0) carouselIndex = 0;
+            if (carouselIndex > track.children.length - 1) carouselIndex = track.children.length - 1;
+            track.scrollTo({
+                left: carouselIndex * cardWidth,
+                behavior: "smooth"
+            });
+        }
+
+        // Optionally: Stop auto-carousel on hover (bonus idea)
+        const autoTrack = document.getElementById("auto-track");
+        autoTrack.addEventListener("mouseover", () => autoTrack.style.animationPlayState = 'paused');
+        autoTrack.addEventListener("mouseout", () => autoTrack.style.animationPlayState = 'running');
+    </script>
+
+
+</body>
+
+</html>
